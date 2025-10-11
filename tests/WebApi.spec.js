@@ -1,10 +1,18 @@
-const { test, expect } = require('@playwright/test');
- 
- 
- 
-test('@Ecommerce test script ', async ({ page }) => {
-   //js file- Login js, DashboardPage
-   const email = "wrightadebayo80@gmail.com";
+const {test,expect,request}= require('@playwright/test')
+loginPayload={"userEmail":'wrightadebayo80@gmail.com',"userPassword":'Computer30'}
+test.beforeAll(()=>
+  {
+const apiContext = await request.newContext()
+apiContext.post('https://rahulshettyacademy.com/api/ecom/auth/login')
+})
+
+test.beforeEach(()=>{
+  
+})
+
+
+test('webApi test script',asyc({page})=>{
+ const email = "wrightadebayo80@gmail.com";
    const productName = 'ZARA COAT 3';
    const products = page.locator(".card-body");
    await page.goto("https://rahulshettyacademy.com/client");
@@ -64,4 +72,5 @@ test('@Ecommerce test script ', async ({ page }) => {
    }
    const orderIdDetails = await page.locator(".col-text").textContent();
    expect(orderId.includes(orderIdDetails)).toBeTruthy();
-});
+
+})
