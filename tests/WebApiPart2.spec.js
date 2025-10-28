@@ -1,4 +1,4 @@
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require("@playwright/test");
 
 let webContext;
 
@@ -11,18 +11,18 @@ test.beforeAll(async ({ browser }) => {
   await page.locator("#userEmail").pressSequentially(email, { delay: 150 });
   await page.locator("#userPassword").fill("Computer30");
   await page.locator("[value='Login']").click();
-  await page.waitForLoadState('networkidle');
+  await page.waitForLoadState("networkidle");
 
   // Save login session to state.json
-  await context.storageState({ path: 'state.json' });
+  await context.storageState({ path: "state.json" });
 
   // Reuse the saved login session for next tests
-  webContext = await browser.newContext({ storageState: 'state.json' });
+  webContext = await browser.newContext({ storageState: "state.json" });
 });
 
-test('@Ecommerce test script', async () => {
+test("@Ecommerce test script", async () => {
   const email = "wrightadebayo80@gmail.com";
-  const productName = 'ZARA COAT 3';
+  const productName = "ZARA COAT 3";
   const page = await webContext.newPage();
   await page.goto("https://rahulshettyacademy.com/client");
 
@@ -45,7 +45,9 @@ test('@Ecommerce test script', async () => {
   expect(bool).toBeTruthy();
 
   await page.locator("text=Checkout").click();
-  await page.locator("[placeholder*='Country']").pressSequentially("ind", { delay: 150 });
+  await page
+    .locator("[placeholder*='Country']")
+    .pressSequentially("ind", { delay: 150 });
 
   const dropdown = page.locator(".ta-results");
   await dropdown.waitFor();
@@ -62,16 +64,20 @@ test('@Ecommerce test script', async () => {
   expect(page.locator(".user__name [type='text']").first()).toHaveText(email);
 
   await page.locator(".action__submit").click();
-  await expect(page.locator(".hero-primary")).toHaveText(" Thankyou for the order. ");
+  await expect(page.locator(".hero-primary")).toHaveText(
+    " Thankyou for the order. "
+  );
 
-  const orderId = await page.locator(".em-spacer-1 .ng-star-inserted").textContent();
+  const orderId = await page
+    .locator(".em-spacer-1 .ng-star-inserted")
+    .textContent();
   console.log(orderId);
 
   await page.locator("button[routerlink*='myorders']").click();
   await page.locator("tbody").waitFor();
 
   const rows = await page.locator("tbody tr");
-  for (let i = 0; i < await rows.count(); ++i) {
+  for (let i = 0; i < (await rows.count()); ++i) {
     const rowOrderId = await rows.nth(i).locator("th").textContent();
     if (orderId.includes(rowOrderId)) {
       await rows.nth(i).locator("button").first().click();
@@ -84,7 +90,7 @@ test('@Ecommerce test script', async () => {
 });
 
 // Simple test just to confirm login and product list
-test('@Ecommerce verify products list', async () => {
+test("@Ecommerce verify products list", async () => {
   const page = await webContext.newPage();
   await page.goto("https://rahulshettyacademy.com/client");
   const products = page.locator(".card-body");
