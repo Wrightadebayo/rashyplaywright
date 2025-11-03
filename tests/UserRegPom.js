@@ -1,15 +1,16 @@
 const { test, expect } = require("@playwright/test");
-
+const {LoginPage} = require('./pageobjectmodel/LoginPage')
 test("@Ecommerce test script ", async ({ page }) => {
   //js file- Login js, DashboardPage
-  const email = "wrightadebayo80@gmail.com";
-  const productName = "ZARA COAT 3";
-  const LoginPage = new LoginPage(page)
+  const username = "wrightadebayo80@gmail.com";
+  const password = "computer30"
+  const productName = "ZARA COAT 3"
   const products = page.locator(".card-body");
-  await page.goto("https://rahulshettyacademy.com/client");
-  await page.locator("#userEmail").pressSequentially(email, { delay: 150 });
-  await page.locator("#userPassword").fill("Computer30");
-  await page.locator("[value='Login']").click();
+   const loginPage = new LoginPage(page)
+  loginPage.goTo(page)
+  loginPage.loginToApplication(username,password)
+
+ 
   await page.waitForLoadState("networkidle");
   await page.locator(".card-body b").first().waitFor();
   const titles = await page.locator(".card-body b").allTextContents();
@@ -45,7 +46,7 @@ test("@Ecommerce test script ", async ({ page }) => {
     }
   }
 
-  expect(page.locator(".user__name [type='text']").first()).toHaveText(email);
+  expect(page.locator(".user__name [type='text']").first()).toHaveText(username);
   await page.locator(".action__submit").click();
   await expect(page.locator(".hero-primary")).toHaveText(
     " Thankyou for the order. "

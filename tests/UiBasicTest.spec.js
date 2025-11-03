@@ -7,8 +7,10 @@ test.only("browser context test", async ({ browser }) => {
   const userName = page.locator("#username");
   const signIn = page.locator("#signInBtn");
   const cardTitle = page.locator(".card-body a");
-  page.route("request", (request) => console.log(request.url()));
-  page.route("response", (response) => console.log(response.url()));
+  page.on("request", (request) => console.log(request.url()));
+  page.on("response", (response) =>
+    console.log(response.url(), response.status())
+  );
   await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
   console.log(await page.title());
 
