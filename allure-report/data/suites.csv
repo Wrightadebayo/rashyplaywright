@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5424","visual comparison","","Thu Nov 06 22:43:48 WAT 2025","passed","Thu Nov 06 22:43:54 WAT 2025","","MoreValidation.spec.js","",""
+"","35366","browser context test","","Fri Nov 07 23:44:09 WAT 2025","passed","Fri Nov 07 23:44:44 WAT 2025","","UiBasicTest.spec.js","",""
+"","40736","Client App login","","Sat Nov 08 00:44:46 WAT 2025","broken","Sat Nov 08 00:45:27 WAT 2025","","UserRegPom.spec.js","",""

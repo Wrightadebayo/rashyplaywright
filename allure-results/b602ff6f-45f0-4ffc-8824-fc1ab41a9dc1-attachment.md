@@ -1,0 +1,43 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e7]:
+  - generic [ref=e9]:
+    - heading "Forgot password" [level=2] [ref=e10]
+    - textbox "Name" [ref=e11]
+    - textbox "Email" [ref=e12]
+    - textbox "Phone Number" [ref=e13]
+    - generic [ref=e14]:
+      - button "Go to Login" [ref=e15] [cursor=pointer]
+      - button "Reset Login" [ref=e16] [cursor=pointer]
+  - generic [ref=e18]:
+    - heading "Sign in" [level=1] [ref=e19]
+    - textbox "Username" [active] [ref=e20]
+    - textbox "Password" [ref=e21]
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - checkbox "Remember my username" [ref=e24]
+        - text: Remember my username
+      - generic [ref=e25]:
+        - checkbox "I agree to the terms and privacy policy." [ref=e26]
+        - generic [ref=e27]:
+          - text: I agree to the
+          - link "terms" [ref=e28] [cursor=pointer]:
+            - /url: "#"
+          - text: and
+          - link "privacy policy" [ref=e29] [cursor=pointer]:
+            - /url: "#"
+          - text: .
+    - link "Forgot your password?" [ref=e31] [cursor=pointer]:
+      - /url: "#"
+    - button "Sign In" [ref=e32] [cursor=pointer]
+  - generic [ref=e34]:
+    - generic [ref=e35]:
+      - heading "Rahul Shetty Academy" [level=1] [ref=e36]
+      - paragraph [ref=e37]: World class Tutorials on Selenium, Rest Assured, Protractor, SoapUI, Appium, Cypress, Jmeter, Cucumber, Jira and many more!
+      - button "Visit us" [ref=e38] [cursor=pointer]
+    - generic [ref=e39]:
+      - heading "Rahul Shetty Academy" [level=1] [ref=e40]
+      - paragraph [ref=e41]: An Academy to Learn Earn & Shine in your QA Career
+      - button "Visit us" [ref=e42] [cursor=pointer]
+```

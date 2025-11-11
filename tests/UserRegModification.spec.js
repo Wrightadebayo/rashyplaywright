@@ -1,6 +1,6 @@
 const { test, expect } = require("@playwright/test");
 
-test("UserRegGeTmod test ", async ({ page }) => {
+test("@web UserRegGeTmod test ", async ({ page }) => {
   //js file- Login js, DashboardPage
   const email = "wrightadebayo80@gmail.com";
 

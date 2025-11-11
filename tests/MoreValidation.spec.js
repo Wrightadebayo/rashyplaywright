@@ -1,6 +1,7 @@
 const { test, expect } = require("@playwright/test");
 
-test("popups and iframes", async ({ page }) => {
+// test.describe.configure({ mode:"parallel"})
+test("@web popups and iframes", async ({ page }) => {
   await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
   // await page.goto('http://google.com')
   // await page.goBack()
@@ -49,7 +50,7 @@ test("Screenshot and visual comparison", async ({ page }) => {
   await page.locator("#hide-textbox").click();
 });
 
-test.only("visual comparison", async ({ page }) => {
+test("visual comparison", async ({ page }) => {
   //await page.goto('http://www.flightware.com')
   await page.goto("http://www.google.com");
   await page.screenshot({ path: "landingpage.png" });

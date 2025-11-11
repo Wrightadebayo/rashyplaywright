@@ -1,0 +1,44 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e7]:
+  - generic [ref=e9]:
+    - heading "Forgot password" [level=2] [ref=e10]
+    - textbox "Name" [ref=e11]
+    - textbox "Email" [ref=e12]
+    - textbox "Phone Number" [ref=e13]
+    - generic [ref=e14]:
+      - button "Go to Login" [ref=e15] [cursor=pointer]
+      - button "Reset Login" [ref=e16] [cursor=pointer]
+  - generic [ref=e18]:
+    - heading "Sign in" [level=1] [ref=e19]
+    - paragraph [ref=e20]: "* Incorrect username or password"
+    - textbox "Username" [active] [ref=e21]
+    - textbox "Password" [ref=e22]
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - checkbox "Remember my username" [checked] [ref=e25]
+        - text: Remember my username
+      - generic [ref=e26]:
+        - checkbox "I agree to the terms and privacy policy." [checked] [ref=e27]
+        - generic [ref=e28]:
+          - text: I agree to the
+          - link "terms" [ref=e29] [cursor=pointer]:
+            - /url: "#"
+          - text: and
+          - link "privacy policy" [ref=e30] [cursor=pointer]:
+            - /url: "#"
+          - text: .
+    - link "Forgot your password?" [ref=e32] [cursor=pointer]:
+      - /url: "#"
+    - button "Sign In" [ref=e33] [cursor=pointer]
+  - generic [ref=e35]:
+    - generic [ref=e36]:
+      - heading "Rahul Shetty Academy" [level=1] [ref=e37]
+      - paragraph [ref=e38]: World class Tutorials on Selenium, Rest Assured, Protractor, SoapUI, Appium, Cypress, Jmeter, Cucumber, Jira and many more!
+      - button "Visit us" [ref=e39] [cursor=pointer]
+    - generic [ref=e40]:
+      - heading "Rahul Shetty Academy" [level=1] [ref=e41]
+      - paragraph [ref=e42]: An Academy to Learn Earn & Shine in your QA Career
+      - button "Visit us" [ref=e43] [cursor=pointer]
+```

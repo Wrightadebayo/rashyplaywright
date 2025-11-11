@@ -1,0 +1,85 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - navigation [ref=e5]:
+    - generic [ref=e7]:
+      - link "Automation Automation Practice":
+        - /url: ""
+        - generic [ref=e8] [cursor=pointer]:
+          - heading "Automation" [level=3] [ref=e9]
+          - paragraph [ref=e10]: Automation Practice
+    - text: 
+    - list [ref=e11]:
+      - listitem [ref=e12] [cursor=pointer]:
+        - button " HOME" [ref=e13]:
+          - generic [ref=e14]: 
+          - text: HOME
+      - listitem
+      - listitem [ref=e15] [cursor=pointer]:
+        - button " ORDERS" [ref=e16]:
+          - generic [ref=e17]: 
+          - text: ORDERS
+      - listitem [ref=e18] [cursor=pointer]:
+        - button " Cart" [ref=e19]:
+          - generic [ref=e20]: 
+          - text: Cart
+      - listitem [ref=e21] [cursor=pointer]:
+        - button "Sign Out" [ref=e22]:
+          - generic [ref=e23]: 
+          - text: Sign Out
+  - text:    
+  - generic [ref=e24]:
+    - paragraph [ref=e25]: Home | Search
+    - heading "Filters" [level=4] [ref=e27]
+    - generic [ref=e28]:
+      - textbox "search" [ref=e30]
+      - generic [ref=e31]:
+        - heading "Price Range" [level=6] [ref=e32]
+        - generic [ref=e33]:
+          - textbox "Min Price" [ref=e35]
+          - textbox "Max Price" [ref=e37]
+      - generic [ref=e38]:
+        - heading "Categories" [level=6] [ref=e39]
+        - generic [ref=e41]: 
+        - generic [ref=e42]:
+          - checkbox [ref=e43]
+          - generic [ref=e44]: fashion
+        - generic [ref=e45]:
+          - checkbox [ref=e46]
+          - generic [ref=e47]: electronics
+        - generic [ref=e48]:
+          - checkbox [ref=e49]
+          - generic [ref=e50]: household
+      - generic [ref=e51]:
+        - heading "Sub Categories" [level=6] [ref=e52]
+        - generic [ref=e54]: 
+        - generic [ref=e55]:
+          - checkbox [ref=e56]
+          - generic [ref=e57]: t-shirts
+        - generic [ref=e58]:
+          - checkbox [ref=e59]
+          - generic [ref=e60]: shirts
+        - generic [ref=e61]:
+          - checkbox [ref=e62]
+          - generic [ref=e63]: shoes
+        - generic [ref=e64]:
+          - checkbox [ref=e65]
+          - generic [ref=e66]: mobiles
+        - generic [ref=e67]:
+          - checkbox [ref=e68]
+          - generic [ref=e69]: laptops
+      - generic [ref=e70]:
+        - heading "Search For" [level=6] [ref=e71]
+        - generic [ref=e73]: 
+        - generic [ref=e74]:
+          - checkbox [ref=e75]
+          - generic [ref=e76]: men
+        - generic [ref=e77]:
+          - checkbox [ref=e78]
+          - generic [ref=e79]: women
+  - generic [ref=e82]:
+    - generic [ref=e83]: Showing results |
+    - generic [ref=e84]: User can only see maximum 9 products on a page
+  - generic [ref=e85]: Design and Developed By - Kunal Sharma
+```

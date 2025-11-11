@@ -1,0 +1,42 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - link "Free Access to InterviewQues/ResumeAssistance/Material" [ref=e2] [cursor=pointer]:
+    - /url: https://rahulshettyacademy.com/documents-request
+  - generic [ref=e3]:
+    - heading [level=3] [ref=e4]:
+      - img [ref=e6]
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - generic [ref=e14]: "Username:"
+        - textbox "Username:" [ref=e15]: rahulshetty
+      - generic [ref=e16]:
+        - generic [ref=e17]: "Password:"
+        - textbox "Password:" [ref=e18]: learning
+      - generic [ref=e20]:
+        - generic [ref=e21] [cursor=pointer]:
+          - generic [ref=e22] [cursor=pointer]: Admin
+          - radio "Admin" [checked] [ref=e23] [cursor=pointer]
+        - generic [ref=e25] [cursor=pointer]:
+          - generic [ref=e26] [cursor=pointer]: User
+          - radio "User" [ref=e27] [cursor=pointer]
+      - combobox [ref=e30]:
+        - option "Student" [selected]
+        - option "Teacher"
+        - option "Consultant"
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - checkbox "I Agree to the terms and conditions" [ref=e34]
+          - generic [ref=e35]:
+            - text: I Agree to the
+            - link "terms and conditions" [ref=e36] [cursor=pointer]:
+              - /url: "#"
+        - button "Signing .." [active] [ref=e37] [cursor=pointer]
+      - paragraph [ref=e39]:
+        - text: (username is
+        - generic [ref=e41]: rahulshettyacademy
+        - text: and Password is
+        - generic [ref=e43]: learning
+        - text: )
+```

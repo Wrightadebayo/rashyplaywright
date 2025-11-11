@@ -29,5 +29,5 @@ test("security request test", async ({ page }) => {
     "You are not authorize to view this order"
   );
   // 4️⃣ Pause for inspection
-  await page.pause();
+  // await page.pause();
 });

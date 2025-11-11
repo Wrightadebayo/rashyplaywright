@@ -20,7 +20,7 @@ test.beforeAll(async ({ browser }) => {
   webContext = await browser.newContext({ storageState: "state.json" });
 });
 
-test("@Ecommerce test script", async () => {
+test("@Api Ecommerce test script", async () => {
   const email = "wrightadebayo80@gmail.com";
   const productName = "ZARA COAT 3";
   const page = await webContext.newPage();
@@ -90,7 +90,7 @@ test("@Ecommerce test script", async () => {
 });
 
 // Simple test just to confirm login and product list
-test("@Ecommerce verify products list", async () => {
+test("@API Ecommerce verify products list", async () => {
   const page = await webContext.newPage();
   await page.goto("https://rahulshettyacademy.com/client");
   const products = page.locator(".card-body");

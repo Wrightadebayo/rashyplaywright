@@ -1,0 +1,62 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link "Gmail" [ref=e8] [cursor=pointer]:
+          - /url: https://mail.google.com/mail/&ogbl
+        - link "Search for Images" [ref=e10] [cursor=pointer]:
+          - /url: https://www.google.com/imghp?hl=en&ogbl
+          - text: Images
+      - button "Google apps" [ref=e13] [cursor=pointer]:
+        - img [ref=e14]
+      - link "Sign in" [ref=e18] [cursor=pointer]:
+        - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/%3Fgws_rd%3Dssl&ec=futura_exp_og_so_72776762_e
+  - img "Google" [ref=e21]
+  - search [ref=e29]:
+    - generic [ref=e31]:
+      - generic [ref=e33]:
+        - img [ref=e37]
+        - combobox "Search" [active] [ref=e40]
+        - generic [ref=e43]:
+          - button "Search by voice" [ref=e44] [cursor=pointer]:
+            - img [ref=e45]
+          - button "Search by image" [ref=e47] [cursor=pointer]:
+            - img [ref=e48]
+      - generic [ref=e51]:
+        - button "Google Search" [ref=e52] [cursor=pointer]
+        - button "I'm Feeling Lucky" [ref=e53] [cursor=pointer]
+  - generic [ref=e56]:
+    - text: "Google offered in:"
+    - link "Hausa" [ref=e57] [cursor=pointer]:
+      - /url: https://www.google.com/setprefs?sig=0_g3MfYLLHjlIyfeL7gxMbwZASj9Q%3D&hl=ha&source=homepage&sa=X&ved=0ahUKEwik4angx-eQAxUcH7kGHRm6Ch8Q2ZgBCBU
+    - link "Igbo" [ref=e58] [cursor=pointer]:
+      - /url: https://www.google.com/setprefs?sig=0_g3MfYLLHjlIyfeL7gxMbwZASj9Q%3D&hl=ig&source=homepage&sa=X&ved=0ahUKEwik4angx-eQAxUcH7kGHRm6Ch8Q2ZgBCBY
+    - link "Èdè Yorùbá" [ref=e59] [cursor=pointer]:
+      - /url: https://www.google.com/setprefs?sig=0_g3MfYLLHjlIyfeL7gxMbwZASj9Q%3D&hl=yo&source=homepage&sa=X&ved=0ahUKEwik4angx-eQAxUcH7kGHRm6Ch8Q2ZgBCBc
+    - link "Nigerian Pidgin" [ref=e60] [cursor=pointer]:
+      - /url: https://www.google.com/setprefs?sig=0_g3MfYLLHjlIyfeL7gxMbwZASj9Q%3D&hl=pcm&source=homepage&sa=X&ved=0ahUKEwik4angx-eQAxUcH7kGHRm6Ch8Q2ZgBCBg
+  - contentinfo [ref=e62]:
+    - generic [ref=e63]: Nigeria
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - link "About" [ref=e66] [cursor=pointer]:
+          - /url: https://about.google/?utm_source=google-NG&utm_medium=referral&utm_campaign=hp-footer&fg=1
+        - link "Advertising" [ref=e67] [cursor=pointer]:
+          - /url: https://www.google.com/intl/en_ng/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1
+        - link "Business" [ref=e68] [cursor=pointer]:
+          - /url: https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1
+        - link "How Search works" [ref=e69] [cursor=pointer]:
+          - /url: https://google.com/search/howsearchworks/?fg=1
+      - link "Applying AI towards science and the environment" [ref=e71] [cursor=pointer]:
+        - /url: https://ai.google/societal-impact/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer
+      - generic [ref=e72]:
+        - link "Privacy" [ref=e73] [cursor=pointer]:
+          - /url: https://policies.google.com/privacy?hl=en-NG&fg=1
+        - link "Terms" [ref=e74] [cursor=pointer]:
+          - /url: https://policies.google.com/terms?hl=en-NG&fg=1
+        - button "Settings" [ref=e78] [cursor=pointer]:
+          - generic [ref=e79]: Settings
+```

@@ -1,5 +1,5 @@
 const { test, expect, request } = require("@playwright/test");
-const { APiUtils } = require("./utils/APiUtils");
+const { APiUtils } = require("../utils/APiUtils");
 const loginPayLoad = {
   userEmail: "wrightadebayo80@gmail.com",
   userPassword: "Computer30",
@@ -14,7 +14,6 @@ test.beforeAll(async () => {
   const apiUtils = new APiUtils(apiContext, loginPayLoad);
   response = await apiUtils.createOrder(orderPayLoad);
 });
-
 //create order is success
 test("@API Place the order", async ({ page }) => {
   await page.addInitScript((value) => {
