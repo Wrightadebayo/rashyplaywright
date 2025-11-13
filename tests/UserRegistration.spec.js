@@ -1,6 +1,6 @@
 const { test, expect } = require("@playwright/test");
 
-test.skip("@Ecommerce test script ", async ({ page }) => {
+test("@Ecommerce test script ", async ({ page }) => {
   //js file- Login js, DashboardPage
   const email = "wrightadebayo80@gmail.com";
   const productName = "ZARA COAT 3";

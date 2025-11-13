@@ -7,9 +7,9 @@ import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   testDir: './tests',       // Folder with all your test files
   timeout: 40 * 1000,        // Test timeout 40s
-  retries: 1,                // Retry failed tests once
+  retries: 2,                // Retry failed tests once
   fullyParallel: true,       // Run multiple test files in parallel
-  workers: 8,                // Number of concurrent workers (adjust to your CPU)
+  workers: 5,                // Number of concurrent workers (adjust to your CPU)
 
   expect: {
     timeout: 5000,

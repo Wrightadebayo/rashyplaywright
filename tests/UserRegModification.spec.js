@@ -5,10 +5,8 @@ test("@web UserRegGeTmod test ", async ({ page }) => {
   const email = "wrightadebayo80@gmail.com";
 
   await page.goto("https://rahulshettyacademy.com/client");
-  await page.locator("#userEmail").pressSequentially(email, { delay: 150 });
-  await page
-    .getByPlaceholder("enter your passsword")
-    .pressSequentially("Computer30", { delay: 150 });
+  await page.locator("#userEmail").type(email);
+  await page.getByPlaceholder("enter your passsword").type("Computer30");
   await page.getByRole("button", { name: "Login" }).click();
   await page.waitForLoadState("networkidle");
   await page.locator(".card-body b").first().waitFor();

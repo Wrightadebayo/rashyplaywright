@@ -1,13 +1,9 @@
 const { test, expect } = require("@playwright/test");
-const { POManager } = require("./pageobjectmodel/POManager");
+const { POManager } = require("../pageobjectmodel/POManager");
 const { customtest } = require("../utils/test-base");
 
 customtest("@web Client App login", async ({ page, testDataForOrder }) => {
   const poManager = new POManager(page);
-  //js file- Login js, DashboardPage
-  // const username = "wrightadebayo80@gmail.com";
-  // const password = "Computer30";
-  // const productName = "ZARA COAT 3";
   const products = page.locator(".card-body");
   const loginPage = poManager.getLoginPage();
   await loginPage.goTo();
@@ -27,6 +23,7 @@ customtest("@web Client App login", async ({ page, testDataForOrder }) => {
   await ordersReviewPage.searchCountryAndSelect("ind", "India");
   const orderId = await ordersReviewPage.SubmitAndGetOrderId();
   console.log(orderId);
+  
   await dashboardPage.navigateToOrders();
   const ordersHistoryPage = poManager.getOrdersHistoryPage();
   await ordersHistoryPage.searchOrderAndSelect(orderId);

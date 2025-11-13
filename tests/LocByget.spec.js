@@ -23,7 +23,7 @@ test("Playwright Special locators", async ({ page }) => {
   //locator(css)
 });
 
-test("@Getlocators ", async ({ page }) => {
+test("@web Getlocators ", async ({ page }) => {
   await page.goto("https://rahulshettyacademy.com/locatorspractice/ ");
   await page
     .getByPlaceholder("Username")
