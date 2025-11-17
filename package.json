@@ -6,7 +6,8 @@
   "scripts": {
     "regression": "npx playwright test",
     "webTests": "npx playwright test --grep @web",
-    "ApiTests": "npx playwright test --grep @Api"
+    "ApiTests": "npx playwright test --grep @Api",
+    "CucumberRegression":"npx cucumber-js --tags '@Regresion' --retry 1 --exit --format html:cucumber-report.html"
   },
   "keywords": [],
   "author": "",
